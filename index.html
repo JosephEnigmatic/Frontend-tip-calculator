@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Tip-Calculator-App</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="header">
+            <img src="images/logo.svg" alt="" class="header__logo">
+        </div>
+
+        <article class="tip-calculator grid">
+
+            <div class="billing">
+                <div class="form-control">
+                    <label for="bill">Bill</label>
+                    <input class="input" type="text" id="bill" placeholder="0.00">
+                </div>
+            
+                <div class="form-control">
+                    <label for="tip">Select Tip %</label>
+                    <div class="tip-grid">
+                        <button onclick="fiveTip()">5%</button>
+                        <button onclick="tenTip()">10%</button>
+                        <button onclick="fifteenTip()">15%</button>
+                        <button onclick="twentyFiveTip()">25%</button>
+                        <button onclick="fiftyTip()">50%</button>
+                        <input class="input" type="text" id="custom" placeholder="Custom">
+                    </div>
+                </div>
+ 
+                <div class="people form-control">
+                    <label for="People">Number of People</label>
+                    <small class="small">Can't be zero</small>
+                    <input class="input" type="text" id="people" placeholder="1">
+                </div>
+            </div>
+
+            <div class="pricing">
+                <ul>
+                    <li>
+                        <h3>Tip Amount</h3>
+                        <p>/ person</p>
+                    </li>
+
+                    <li class="huge" id="tip-amount">$0.00</li>
+                </ul>
+              
+                <ul>
+                    <li>
+                        <h3>Total</h3>
+                        <p>/ person</p>
+                    </li>
+
+                    <li class="huge" id="bill-amount">$0.00</li>
+                </ul>
+              
+                <button id="reset-btn">Reset</button>              
+            </div>
+                      
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
